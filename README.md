@@ -5,5 +5,5 @@ All example in jetpack compose
 - [Youtube Video](https://youtu.be/c_DhMWBKUUM)
 ### Screenshots: 
 <p align="center">
-  <img src="https://github.com/liemvo/compose_examples/blob/master/login.png" width="480" title="Login">
+  <img src="https://github.com/liemvo/compose_examples/blob/liemvo/login.png" width="480" title="Login">
 </p>
