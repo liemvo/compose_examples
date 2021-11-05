@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PasswordMeter</string>
+    <string name="too_weak">Too weak</string>
+    <string name="weak">Weak</string>
+    <string name="fair">Fair</string>
+    <string name="good">Good</string>
+    <string name="strong">Strong</string>
+</resources>
