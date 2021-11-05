@@ -17,7 +17,7 @@ All example in jetpack compose
 
 
 # 2.  [Jetpack compose - password meter indicator](https://github.com/liemvo/compose_examples/tree/liemvo/compose_passwordMeter)
-- [Youtube Video](https://youtu.be/W0Z-qaugtdA)
+- [Youtube Video](https://youtu.be/j2YjjV2RgNA)
 ### Screenshots: 
 <p align="center">
   <img src="https://github.com/liemvo/compose_examples/blob/liemvo/compose_password_meter.png" width="480" title="Password Meter Indicator">
