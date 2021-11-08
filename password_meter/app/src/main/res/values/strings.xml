@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">password_meter</string>
+    <string name="too_weak">Too weak</string>
+    <string name="weak">Weak</string>
+    <string name="medium">Medium</string>
+    <string name="strong">Strong</string>
+    <string name="too_strong">Too Strong</string>
+</resources>
