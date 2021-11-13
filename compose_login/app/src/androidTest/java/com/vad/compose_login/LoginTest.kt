@@ -1,17 +1,14 @@
 package com.vad.compose_login
 
 import androidx.compose.ui.test.SemanticsNodeInteraction
+import androidx.compose.ui.test.assertHasClickAction
 import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.assertIsEnabled
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
-import androidx.compose.ui.test.performClick
-import androidx.compose.ui.test.performTextInput
 import androidx.compose.ui.test.printToLog
 import com.vad.compose_login.ui.theme.Compose_loginTheme
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -48,39 +45,16 @@ class LoginTest {
     }
 
     @Test
-    fun loginIsLoaded() {
-        val button = composeTestRule.onNodeWithText("Login")
-        button.assertIsDisplayed()
-        button.assertIsNotEnabled()
-
-        val username = composeTestRule.onNodeWithTag("user")
-        username.assertIsDisplayed()
-        assertEquals("Next", username.imeActionValue())
-        assertTrue(username.currentText().isNullOrEmpty()!!)
-        val password = composeTestRule.onNodeWithTag("password")
-        password.assertIsDisplayed()
-        assertEquals("Done", password.imeActionValue())
-        assertTrue(password.currentText().isNullOrEmpty()!!)
-    }
-
-    @Test
-    fun loginEnabledIsLoaded() {
-        val button = composeTestRule.onNodeWithText("Login")
-        button.assertIsDisplayed()
-        button.assertIsNotEnabled()
-
-        val username = composeTestRule.onNodeWithTag("user")
-        username.performTextInput("user")
-        username.assertIsDisplayed()
-        assertEquals("Next", username.imeActionValue())
-        assertEquals("user", username.currentText())
-
-        val password = composeTestRule.onNodeWithTag("password")
-        password.performTextInput("hellothere")
-        password.assertIsDisplayed()
-        assertEquals("Done", password.imeActionValue())
-        assertEquals("hellothere", password.currentText())
-
-        button.assertIsEnabled()
+    fun loginScreenIsLoaded() {
+        composeTestRule.onNodeWithText("Username").assertIsDisplayed()
+        composeTestRule.onNodeWithText("Password").assertIsDisplayed()
+        composeTestRule.onNodeWithText("Login").assertIsDisplayed()
+        composeTestRule.onNodeWithText("Login").assertHasClickAction()
+        composeTestRule.onNodeWithText("Login").printToLog("ABC")
+        composeTestRule.onNodeWithText("Login").assertIsNotEnabled()
+        composeTestRule.onNodeWithTag("user").assertIsDisplayed()
+        composeTestRule.onNodeWithTag("user").printToLog("ABC")
+        composeTestRule.onNodeWithTag("password").assertIsDisplayed()
+        composeTestRule.onNodeWithTag("password").printToLog("ABC")
     }
 }
