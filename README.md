@@ -16,9 +16,24 @@ All example in jetpack compose
 </p>
 
 
-# 2.  [Jetpack compose - password meter indicator](https://github.com/liemvo/compose_examples/tree/liemvo/compose_passwordMeter)
+# 3.  [Jetpack compose - password meter indicator](https://github.com/liemvo/compose_examples/tree/liemvo/compose_passwordMeter)
 - [Youtube Video](https://youtu.be/j2YjjV2RgNA)
 ### Screenshots: 
 <p align="center">
   <img src="https://github.com/liemvo/compose_examples/blob/liemvo/compose_password_meter.png" width="480" title="Password Meter Indicator">
+</p>
+
+
+# 4.  [Jetpack compose - UI test](https://github.com/liemvo/compose_examples/tree/liemvo/compose_login)
+- [Youtube Video](https://www.youtube.com/watch?v=ysJGACN6_ds)
+### Screenshots: 
+<p align="center">
+  <img src="https://github.com/liemvo/compose_examples/blob/liemvo/login.png" width="480" title="Login">
+</p>
+
+# 5.  [Jetpack compose - List](https://github.com/liemvo/compose_examples/tree/liemvo/compose_list)
+- [Youtube Video](https://youtu.be/6kM-Gj5ymCQ)
+### Screenshots: 
+<p align="center">
+  <img src="https://github.com/liemvo/compose_examples/blob/liemvo/compose_list.png" width="480" title="Compose List">
 </p>
