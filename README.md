@@ -37,3 +37,11 @@ All example in jetpack compose
 <p align="center">
   <img src="https://github.com/liemvo/compose_examples/blob/liemvo/compose_list.png" width="480" title="Compose List">
 </p>
+
+
+# 6.  [Jetpack compose - List Sticky](https://github.com/liemvo/compose_examples/tree/liemvo/compose_list_stickyhseader)
+- [Youtube Video](https://youtu.be/F61tHETIpTw)
+### Screenshots: 
+<p align="center">
+  <img src="https://github.com/liemvo/compose_examples/blob/liemvo/compose_list_sticky.png" width="480" title="Compose List">
+</p>
