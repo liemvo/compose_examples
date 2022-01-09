@@ -39,7 +39,7 @@ All example in jetpack compose
 </p>
 
 
-# 6.  [Jetpack compose - List Sticky](https://github.com/liemvo/compose_examples/tree/liemvo/compose_list_stickyhseader)
+# 6.  [Jetpack compose - List Sticky](https://github.com/liemvo/compose_examples/tree/liemvo/compose_list_stickyheader)
 - [Youtube Video](https://youtu.be/F61tHETIpTw)
 ### Screenshots: 
 <p align="center">
