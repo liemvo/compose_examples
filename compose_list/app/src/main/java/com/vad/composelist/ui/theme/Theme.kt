@@ -5,6 +5,11 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.ui.res.dimensionResource
+import com.vad.composelist.R
+import com.vad.composelist.pages.LocalSpacing
+import com.vad.composelist.pages.Spacing
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,
@@ -38,10 +43,18 @@ fun Compose_listTheme(
         LightColorPalette
     }
 
-    MaterialTheme(
-        colors = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
+    CompositionLocalProvider(LocalSpacing provides Spacing(
+        extraSmall = dimensionResource(id = R.dimen.extra_small),
+        small = dimensionResource(id = R.dimen.small),
+        medium = dimensionResource(id = R.dimen.medium),
+        large = dimensionResource(id = R.dimen.large)
+    )) {
+        MaterialTheme(
+            colors = colors,
+            typography = Typography,
+            shapes = Shapes,
+            content = content
+        )
+    }
+
 }

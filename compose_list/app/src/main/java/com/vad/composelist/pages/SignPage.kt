@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Divider
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,7 +18,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -57,17 +57,18 @@ fun ListViewPreview() {
 
 @Composable
 fun SignCard(sign: Sign) {
+    val spacing = MaterialTheme.spacing
     Row(
         horizontalArrangement = Arrangement.spacedBy(16.dp),
         modifier = Modifier
-            .padding(start = 16.dp)
+            .padding(start = spacing.medium)
             .fillMaxWidth()
     ) {
         // this method will get asset image and convert to bitmap
         Parser.assetsToBitmap(LocalContext.current, "signs/${sign.imageName}.webp")?.let {
             Image(
                 bitmap = it.asImageBitmap(), sign.title, modifier = Modifier
-                    .padding(top = 16.dp, bottom = 16.dp)
+                    .padding(top = spacing.medium, bottom = 16.dp)
                     .width(100.dp)
                     .height(100.dp)
                     .align(Alignment.CenterVertically)
